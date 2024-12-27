@@ -14,6 +14,7 @@ import CreateAutomation from '../createautomation'
 import Alert from './notification'
 import BreadCrumbs from '../breadcrumb/main_braidcrumb'
 import { PAGE_BREAD_CRUMBS } from '@/constants/pages'
+
 type props = {
     slug: string
 }

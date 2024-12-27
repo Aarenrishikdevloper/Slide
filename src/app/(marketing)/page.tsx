@@ -85,7 +85,7 @@ export default function Home() {
               </div>
             </div>
             <div className=" relative h-40 md:h-80w-full mt-10">
-              <Image alt="/" src={'/ig-creators.png'} fill className=" object-cover" />
+              <Image src={'/Ig-creators.png'}  fill className=" object-cover" alt="/" />
             </div>
           </div>
         </div>
