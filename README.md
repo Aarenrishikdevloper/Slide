@@ -30,7 +30,7 @@ Slide is built with a modern, scalable tech stack:
 - **Frontend**: [Next.js](https://nextjs.org/), [React Query](https://react-query.tanstack.com/)
 - **Backend**: [Prisma](https://www.prisma.io/), [PostgreSQL](https://www.postgresql.org/)
 - **APIs**:
-  - [Instagram API](https://developers.facebook.com/docs/instagram-api/)
+  - [Instagram API] for integrating Instagram
   -  Gemini API for AI Integration
 - **Payment Integration**: [Stripe](https://stripe.com/)
 
