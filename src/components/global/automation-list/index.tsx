@@ -1,5 +1,5 @@
 'use client'
-import { usepath } from '@/hooks/usepath'
+import { usePath } from '@/hooks/usepath'
 import { cn, getMonthName } from '@/lib/utils'
 import Link from 'next/link'
 import React, { useMemo } from 'react'
@@ -13,7 +13,7 @@ import { Button } from '@/components/ui/button'
 
 
 const AutomationList = () => {
-const { pathname } = usepath()   
+const { pathname } = usePath()   
 const {data} = useQueryAutomations()    
  console.log(data);
 const {latestVariable} = useMutationDataState(['createAutomation'])    

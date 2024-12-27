@@ -1,5 +1,5 @@
 'use client';
-import { usepath } from '@/hooks/usepath';
+import { usePath } from '@/hooks/usepath';
 import { LogoSmall } from '@/svgs/logosmall'
 import React from 'react'
 import Item from './items';
@@ -14,7 +14,7 @@ type props = {
   slug: string
 }
 const Sidebar = ({ slug }: props) => {
-  const { page } = usepath() 
+  const { page } = usePath() 
   
   return (
     <div className='w-[250px] border-[1px] radial fixed left-0 lg:inline-block border-[#545454] bg-gradient-to-b from-[#768BDD] via-[#171717] to-[#768BDD] hidden bottom-0 top-0 m-3 rounded-xl overflow-hidden'>
