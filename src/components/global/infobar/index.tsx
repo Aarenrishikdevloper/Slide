@@ -7,7 +7,7 @@ import { HelpDuoToneWhite } from '@/icons'
 import ClerkAuth from '../clerkauth/clerkauth'
 import { Separator } from '@/components/ui/separator'
 import Item from '../sidebar/items'
-import { usepath } from '@/hooks/usepath'
+import { usePath } from '@/hooks/usepath'
 import { LogoSmall } from '@/svgs/logosmall'
 import Search from '../search'
 import CreateAutomation from '../createautomation'
@@ -19,7 +19,7 @@ type props = {
 }
 
 const Infobar = ({ slug }: props) => {
-    const { page } = usepath()  
+    const { page } = usePath()  
     const currentpage = PAGE_BREAD_CRUMBS.includes(page)|| page === slug
     return (
         currentpage && (

@@ -5,12 +5,12 @@ import { AutomationDuoToneWhite } from '@/icons'
 import React, { useMemo } from 'react'
 import { v4 } from 'uuid';
 import Loader from '../loader';
-import { usecreateAutomation } from '@/hooks/use-automation';
+import { useCreateAutomation } from '@/hooks/use-automation';
 import { useRouter } from 'next/navigation';
 
 const CreateAutomation = () => {
   const mutationId = v4()
-  const{mutate, isPending} = usecreateAutomation(mutationId)   
+  const{mutate, isPending} = useCreateAutomation(mutationId)   
   const router = useRouter()
   const create=()=>{
      mutate({

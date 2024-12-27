@@ -7,7 +7,7 @@ import { TRIGGER } from "@/redux/slices/automation"
 import {z} from 'zod'
 import { useForm } from "react-hook-form"
 import useZodForm from "./use-zod-schema"
-export const usecreateAutomation=(id?:string)=>{
+export const useCreateAutomation=(id?:string)=>{
     const {isPending, mutate}=useMutationData(
         ['createAutomation'], 
         ()=>createAutomation(id),

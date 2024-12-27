@@ -13,7 +13,7 @@ const Metrics = () => {
   return (
     <div className="h-full flex lg:flex-row  flex-col gap-5 items-end ">
        {[1,2].map((i)=>(
-         <div className="p-5 border-[1px] flex flex-col gap-y-20 rounded-xl w-full lg:w-6/12">
+         <div key={i} className="p-5 border-[1px] flex flex-col gap-y-20 rounded-xl w-full lg:w-6/12">
             {i=== 1 ?(
                 <div>
                     <h2 className='text-3xl text-white font-bold'>Comments</h2> 

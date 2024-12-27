@@ -17,7 +17,7 @@ const ThenButton = ({id}:{id:string}) => {
         <div className="flex flex-col gap-y-2">
          {AUTOMATION_LISTENERS.map((listner)=>listner.type === "SMARTAI"?(
              <Subcription key={listner.type} type={'PRO'}>  
-             <div onClick={()=>onSetListener(listner.type)} className={cn('p-3 rounded-xl flex flex-col gap-y-2 cursor-pointer hover:opacity-80 transition duration-100', Listner === listner.type ? "bg-gradient-to-br from-[#3352CC] to-[#1C2D70]":'bg-background-80')}>
+             <div  onClick={()=>onSetListener(listner.type)} className={cn('p-3 rounded-xl flex flex-col gap-y-2 cursor-pointer hover:opacity-80 transition duration-100', Listner === listner.type ? "bg-gradient-to-br from-[#3352CC] to-[#1C2D70]":'bg-background-80')}>
                <div className="flex gap-x-2 items-center">
                  {listner.icon}  
                  <p>{listner.label}</p>
@@ -28,7 +28,7 @@ const ThenButton = ({id}:{id:string}) => {
              </Subcription>
          ):(
            
-          <div onClick={()=>onSetListener(listner.type)} className={cn('p-3 rounded-xl flex flex-col gap-y-2 cursor-pointer hover:opacity-80 transition duration-100',Listner === listner.type ? "bg-gradient-to-br from-[#3352CC] to-[#1C2D70]":'bg-background-80')}>
+          <div key={listner.type} onClick={()=>onSetListener(listner.type)} className={cn('p-3 rounded-xl flex flex-col gap-y-2 cursor-pointer hover:opacity-80 transition duration-100',Listner === listner.type ? "bg-gradient-to-br from-[#3352CC] to-[#1C2D70]":'bg-background-80')}>
           <div className="flex gap-x-2 items-center">
             {listner.icon}  
             <p>{listner.label}</p>
