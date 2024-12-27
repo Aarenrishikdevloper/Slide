@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Slide
 
-## Getting Started
+Slide is a modern automation tool for Instagram, designed to help you create, manage, and enhance user interactions through smart AI-driven automation. Similar to ManyChat, Slide empowers businesses and individuals to build seamless communication workflows, trigger actions based on comments or direct messages, and boost engagement effortlessly.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Automation
+- **Create and Manage Automation**: Set up automated workflows to handle repetitive tasks.
+- **Activate/Disable Automation**: Quickly enable or disable automations as needed.
+- **Triggers**: Define triggers based on Instagram comments or direct messages to initiate actions.
+- **Keyword Management**: Add, update, and delete keywords to tailor interactions.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Listeners
+- Add listeners to monitor Instagram activities and respond dynamically.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Smart AI Integration
+- Boost user interaction with our AI-powered engine using the Gemini API.
 
-## Learn More
+### Subscription Management
+- Seamless subscription handling using Stripe for payments.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Slide is built with a modern, scalable tech stack:
 
-## Deploy on Vercel
+- **Frontend**: [Next.js](https://nextjs.org/), [React Query](https://react-query.tanstack.com/)
+- **Backend**: [Prisma](https://www.prisma.io/), [PostgreSQL](https://www.postgresql.org/)
+- **APIs**:
+  - [Instagram API](https://developers.facebook.com/docs/instagram-api/)
+  -  Gemini API for AI Integration
+- **Payment Integration**: [Stripe](https://stripe.com/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
