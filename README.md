@@ -34,3 +34,4 @@ Slide is built with a modern, scalable tech stack:
   -  Gemini API for AI Integration
 - **Payment Integration**: [Stripe](https://stripe.com/)
 
+-live url:https://slide-lj4m.vercel.app/
